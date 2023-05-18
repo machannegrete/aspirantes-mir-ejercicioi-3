@@ -1,10 +1,22 @@
 var array = [];
 function join(array){
 
-       let  cadena;
+       var  cadena;
        cadena =array.toString();
-            return cadena;   
-}
+       var Arraycadena=cadena.split(',')
+       var armado ;
+           
+       for (let i = 0; i < Arraycadena.length; i++) {
+          
+          armado  = armado + Arraycadena[i] + ' ' ;
+          
+          
+       }
+       return armado;
+
+     }
+
+    
 
 
 console.log(join([1, 3, 2])) // 1
